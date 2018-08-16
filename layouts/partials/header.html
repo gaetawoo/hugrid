@@ -1,3 +1,4 @@
 			<header class="clearfix">
-				<h1>{{ with .Site.Params.title }}{{ . | markdownify }}{{ end }}<span>{{ with .Site.Params.subtitle }}{{ . | markdownify }}{{ end }}</span></h1>
+				<h1>{{ with .Site.Params.title }}{{ . | markdownify }}{{ end }}<span style="background-color: lightyellow;">{{ with .Site.Params.subtitle }}{{ . | markdownify }}{{ end }}</span></h1>
+				{{ with .Site.Params.disclosure }}{{ . | markdownify }}{{ end }}
 			</header>
